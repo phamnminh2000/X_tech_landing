@@ -1,0 +1,275 @@
+/*----------------------------------------*/
+/*---------DEFAULT SETUP---------*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+/*----------------------------------------*/
+/*---------REUSABLE COMPONENT---------*/
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+.row{
+    max-width: 1200px;
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 0 0;
+    margin: 0 auto;
+}
+h1, h2{
+    letter-spacing: 1px;
+}
+
+h1{
+    font-size: 200%;
+    font-weight: 600;
+    word-spacing: 5px;
+    color: black;
+    line-height: 135%;
+    margin-bottom: 0px;
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #110f0e;
+    font-size: 180%;
+    font-weight: 900;
+    text-align: center;
+}
+
+h3{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align:center;
+    color: rgb(29, 28, 28);
+    margin-bottom: 15px;
+}
+
+h4{
+    color: rgb(81, 119, 202);
+    font-size: 140%;
+    font-weight: 200;
+    margin-left: 20px;
+    font-style: italic;
+}
+
+.btn{
+    text-decoration: none;
+    color: rgb(29, 28, 28);
+    background-image: linear-gradient(180deg,rgba(88, 166, 243, 0.8) 55%,rgba(39, 79, 133, 0.85));
+    padding: 15px 30px;
+    border-radius: 60px;
+    margin: 0 5px;
+    width: 500px;
+    display: inline-block;
+    text-align: center;
+    transition: all 1s;
+    box-shadow: 0px 5px 5px rgb(104, 98, 98);
+}
+
+.btn:hover,
+.btn:active{
+    background-color: rgb(33, 64, 150);
+}
+
+
+/*----------------------------------------*/
+/*---------HEADER---------*/
+
+.logo{
+    width: 350px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+.heading-img{
+    box-shadow: 0px 3px 0px rgb(87, 86, 86);
+    margin-bottom: 30px;
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 55px;
+    font-size: 150%;
+    font-weight: 200;
+}
+.main-nav li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.main-nav li a.call{
+    text-decoration: none;
+    color: rgb(65, 61, 61);
+    font-size: 110%;
+    font-weight: 300;
+    transition: border-bottom 0.5s;
+    padding: 3px 0;
+}
+.main-nav li a.mo{
+    color: rgb(148, 133, 133);
+}
+
+.heading-main-box{
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 1140px;
+    margin-bottom: 50px;
+}
+.comment-features{
+    margin-left: 870px;
+    transform: translate(0%,-300%);
+}
+
+/*----------------------------------------*/
+/*---------HEADER---------*/
+
+.about-picture{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.about-picture img{
+    position: relative;
+    width: 35%;
+    border-radius: 20px;
+    transition: all 0.7s;
+    float: left;
+}
+.picture-tilte{
+    float: left;
+}
+.picture-content{
+    float: left;
+    text-align: justify;
+    color: rgb(129, 129, 129);
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.comment{
+    background-color: rgb(211, 208, 208);
+    width: 1140px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.author{
+    margin-top: 10px;
+    margin-left: 930px;
+}
+.comment-btn{
+    margin-left: 100px;
+    margin-top: 20px;
+    transform:  translate(0%,200%);
+}
+.section-btn{
+    margin-left: 350px;
+}
+.about-section{
+    margin-bottom: 70px;
+}
+
+/*----------------------------------------*/
+/*---------FOOTER---------*/
+
+.row2{
+    position: absolute;
+    max-width: 1200px;
+    background-image: linear-gradient(180deg,rgba(7, 9, 10, 0.2) 5%,grey);
+    background-color: grey;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+}
+
+.contact-title{
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.contact-content{
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.map{
+    width: 260px;
+    height: 120px;
+    margin-left: 10px;
+    margin-top: 70px;
+    border-radius: 10px;
+}
+
+.design-title{
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.design-content{
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.connect-title{
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+
+/*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
+.social-icon{
+    margin-top: 20px;
+    display: flex;
+}
+.social-icon li {
+    list-style: none;
+}
+.social-icon li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.social-icon li a:hover{
+    background: rgb(158, 157, 157);
+}
+.social-icon li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+
